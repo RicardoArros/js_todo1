@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollo Web Front-End">
+    <meta name="keywords" content="Desarrollo Web, Web Development, Front-End, HTML, CSS, Javascript, Sass, Bootstrap, Frameworks, Vue, React">
+    <meta name="author" content="Tu Huella Online">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="./style.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div class="main__container">
+
+        <!-- Row 1 -->
+        <div class="row">
+            <h1 class="main__title">Lista de <span class="main__title-word">Tareas</span></h1>
+
+            <form action="#" class="main__form" id="task-form">
+                <div class="input-field">                    
+                    <label for="task">Nueva Tarea</label>
+                    <div class="inputWithIcon">
+                        <input type="text" id="task" placeholder="Escribir Nueva Tarea">
+                        <!-- <i class="fas fa-edit"></i> -->
+                    </div>
+                </div>
+                <input type="submit" value="¡Añadir Tarea!" class="submit btn">
+            </form>
+        </div>
+
+        <i class="fas "></i>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="main__tasks">
+                <h2 class="main__subtitle">Tareas</h2>
+            
+                <div class="input-field">                    
+                    <label for="filter">Filtro de tareas</label>
+                    <input type="text" name="filter" id="filter" placeholder="Busca tus tareas aquí">
+                </div>
+            
+                <ul class="collection"></ul>
+            
+                <a href="#" class="clear-tasks btn">Borrar Tareas</a>
+            </div>
+        <div>
+        
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>

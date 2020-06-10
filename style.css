@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid');
+
+@font-face {
+  font-family: 'Londrina Solid';
+  src: url("https://fonts.googleapis.com/css?family=Londrina+Solid");
+}
+
+:root {
+    --color-primary-1: #11B8E7;
+    --color-primary-2: rgb(37, 126, 151);
+    --color-secondary-1: #B387BA;  
+    --color-secondary-2: rgb(132, 72, 141);  
+  
+    --color-white: rgb(235, 245, 238);   
+}
+
+/* General Styles */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /* 10px = 1rem */
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+   /*  margin: 10vh 0; */
+    box-sizing: border-box;  
+    
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+    place-items: center;    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: var(--color-white);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--color-white);
+}
+
+.btn {
+    display: inline-block;
+    padding: .6rem 1.2rem;
+    text-transform: uppercase;
+    border: 2px solid var(--color-primary-1);
+}
+
+input[type=text] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-primary-1); 
+    margin: 2rem 0; 
+    padding: 1rem 0;
+    width: 100%;
+    color: var(--color-white);
+    
+    
+}
+
+input[type=text]:focus {
+    border: none;
+    border-bottom: 2px solid var(--color-primary-2); 
+    border-color: var(--color-primary-1);
+    box-shadow: 0 0 8px 0 var(--color-primary-1);
+}
+
+input::placeholder{
+    font-size: 1.5rem;
+    padding-left: 0rem;
+    color: var(--color-white);
+}
+
+input::-moz-placeholder, 
+input:-moz-placeholder {
+    color: rgb(255, 255, 255);
+    /* padding-left: 4rem; */
+}
+
+/* 
+.inputWithIcon input[type="text"] {
+    padding-left: 4rem;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  padding: 1rem;
+  color: var(--color-primary-1);
+  transition: 0.3s;
+} 
+*/
+
+input[type=submit] {  
+    border: 2px solid var(--color-primary-1);
+    background-color: var(--color-primary-1);
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;   
+    color: #EBF5EE;
+    cursor: pointer;
+}
+
+label {
+    font-size: 2.2rem;
+    color: var(--color-primary-1);
+}
+
+/* Mobile Styles */
+
+.main__container {    
+    /* background: rgb(186,142,161); */
+    background: linear-gradient(to right, #67549b, #eaafc8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid rgba(80, 133, 182, 0.479);    
+    padding: 1rem;
+    width: 80vw;
+    max-width: 800px;     
+}
+
+.row {
+   margin: 3rem 0;
+}
+
+.main__title-word {
+    color: var(--color-primary-1);
+}
+
+.main__title, .main__subtitle {
+    margin-bottom: 4rem;    
+}
+
+
+.collection-item {
+    position: relative;
+    border: 1px solid var(--color-primary-1);
+    margin: 2rem 0;
+    padding: 1rem;
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-item {
+    /* 
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 1px solid #bce71f75;
+    border-radius: 50%;    
+    */
+    margin-left: 1rem; 
+    padding: .5rem;
+    cursor: pointer;
+      
+}
+
+.clear-tasks {
+    color: var(--color-white);
+    /* font-size: 1rem; */
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+    body {
+        font-size: 1.8rem;
+    }
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 2.2rem;
+    }
+    .clear-tasks {        
+        font-size: 1.2rem;
+    }    
+}
+
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 3rem;
+    }
+
+    .main__tasks a {
+        font-size: 2rem;
+    }
+    .collection-item {
+        font-size: 1.6rem;
+    }
+    .clear-tasks {        
+        font-size: 1.7rem !important;
+    }  
+    
+}    
